@@ -16,8 +16,7 @@ function setup() {
 function draw() {
   background(255,255,255);
   if(wall.x-car.x < (car.width+wall.width)/2){
-    def = 150
-    //0.5*weight*speed*speed;
+    def = 0.5*weight*speed*speed;
   if(def<100){car.shapeColor="green"} 
   
   if(def>100 && def<180 ||def==100 ){car.shapeColor="blue"} 
